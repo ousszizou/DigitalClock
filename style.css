@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  background: #85D8CE;
+  background: linear-gradient(135deg, #085078, #85D8CE);
+}
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: 'Orbitron', sans-serif;
+}
+
+.Digit
+{
+    display: inline-block;
+    position: relative;
+    width: 95px;
+    height: 130px;
+    background: white;
+    border-radius: 15px;
+    margin-right: 50px
+}
+
+.hour::after
+{
+    content: 'Hour';
+    position: absolute;
+    top: 110%;
+    left: 15%;
+    font-size: 25px;
+    color: white;
+}
+
+.minute::after
+{
+    content: 'minute';
+    position: absolute;
+    top: 110%;
+    left: 1%;
+    font-size: 25px;
+    color: white;
+}
+
+.second::after
+{
+    content: 'second';
+    position: absolute;
+    top: 110%;
+    left: -4%;
+    font-size: 25px;
+    color: white;
+}
+
+.Digit span
+{
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    font-size: 50px;
+    color: #343535;
+}
